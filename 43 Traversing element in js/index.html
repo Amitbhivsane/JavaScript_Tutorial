@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li id="intro">A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+    </ul>
+
+    <p>example 2</p>
+
+    <ul id="myintro">
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+    </ul>
+
+    <script>
+      // let elm = document.getElementById("intro");
+      // // elm.innerHTML = "hello";
+      // let prt = elm.parentElement;
+      // prt.innerHTML = "hello";
+      // console.log(elm);
+      // console.log(prt);
+
+      let myelm = document.getElementById("myintro");
+      //myelm.innerHTML = "<hellojava>";
+      console.log(myelm);
+      // let node = myelm.firstElementChild;
+      // node.innerHTML = "hello";
+      let node = myelm.lastElementChild;
+      node.innerHTML = "hello";
+
+      // let node = myelm.children;
+      console.log(node);
+    </script>
+  </body>
+</html>

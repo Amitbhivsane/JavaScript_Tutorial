@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li id="one">list 1</li>
+      <li id="first">list 2</li>
+      <li>list 3</li>
+    </ul>
+
+    <p class="SuperLogo">p</p>
+    <script>
+      let elm = document.getElementById("first");
+      console.log(elm);
+
+      console.log(elm.innerHTML); //get element
+      elm.innerHTML = "<P>hello</p>"; // set value
+
+      let elm2 = document.getElementById("one");
+      console.log(elm2);
+      console.log(elm2.innerHTML);
+      elm2.innerHTML = "<h1>amit</h1>";
+      // dom practics
+    </script>
+  </body>
+</html>

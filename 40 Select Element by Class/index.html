@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li class="cl">list 1</li>
+      <li id="first">list 2</li>
+      <li class="cl">list 3</li>
+    </ul>
+    <hr />
+    <hr />
+    <ul>
+      <li class="std">list-1</li>
+      <li>list-2</li>
+      <li class="std">list-3</li>
+    </ul>
+    <script>
+      let sel_class = document.getElementsByClassName("cl"); //cl pi
+      sel_class.length;
+      console.log(sel_class);
+
+      for (let i = 0; i < sel_class.length; i++) {
+        sel_class[i].innerHTML = "<p>Hello pipm </p>";
+      }
+
+      let student = document.getElementsByClassName("std");
+      student.length;
+      console.log(student);
+      for (let i = 0; i < student.length; i++) {
+        student[i].innerHTML = "<p>mango</p>";
+      }
+    </script>
+  </body>
+</html>

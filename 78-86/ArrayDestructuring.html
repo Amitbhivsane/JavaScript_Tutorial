@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //old
+      //   let book = ["Advanced js", 200, 150];
+      //   let name = book[0];
+      //   let page = book[1];
+      //   let prize = book[2];
+      //   console.log(prize);
+
+      //array destructuring
+
+      let book = ["advance js", 250, 230, ["New Js", 2022]]; //array
+      let [name, page, prize, [pub_nam, Pub_year]] = book; //nested
+      console.log(Pub_year);
+
+      // used in function old
+      function bookName() {
+        return ["advance js", 2000];
+      }
+      let names = bookName();
+      console.log(names);
+      // used in function new destructuring
+      function books() {
+        return ["advance js", 300, 5000];
+      }
+      let [b_name, b_price, b_pages] = books(); //array destrictiv=c function
+      console.log(b_pages);
+      console.log("=====================================");
+
+      function cal(a, b) {
+        const add = a + b;
+        const sub = a - b;
+        const mul = a * b;
+        return [add, sub, mul];
+      }
+      const [add, sub, mul] = cal(20, 10);
+      console.log(add);
+      console.log(sub);
+      console.log(mul);
+    </script>
+  </body>
+</html>

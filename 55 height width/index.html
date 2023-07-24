@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box">
+      <p>This is simple tag</p>
+    </div>
+    <script>
+      let box = document.getElementById("box");
+      let width = box.offsetHeight;
+      let height = box.offsetWidth;
+      console.log(width);
+      console.log(height);
+      let width1 = box.clientWidth;
+      let height1 = box.clientHeight;
+      console.log(width1);
+      console.log(height1);
+    </script>
+  </body>
+</html>

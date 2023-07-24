@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>WINDOW IN JAVASCRIPT</h1>
+    <button id="btn1">google</button>
+    <button id="btn2">yahoo</button>
+    <button id="btn3">close</button>
+  </body>
+  <script>
+    let btn1 = document.getElementById("btn1");
+    let win;
+    let url = "https://www.google.co.in/";
+    features = "height=500,width=500";
+    btn1.addEventListener("click", function () {
+      win = window.open(url, "google", features);
+    });
+
+    btn2.addEventListener("click", function () {
+      window.open("https://in.search.yahoo.com/?fr2=inr", "google");
+    });
+
+    btn3.addEventListener("click", function () {
+      win.close();
+    });
+  </script>
+</html>

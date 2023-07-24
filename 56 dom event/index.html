@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn" onclick="btnclick()">click me</button>
+    <br />
+
+    <button id="evenbutton">click event</button>
+    <a href="index2.html"> mouse event</a>
+    <script>
+      function btnclick() {
+        alert("button was clicked");
+      }
+
+      let event = document.getElementById("evenbutton");
+      // event.addEventListener("click", btnclick);           //option-1
+      // event.addEventListener("click", function () {       // option-2
+      //   alert("hello javascript"); //annoumas function
+      // });
+      // event.addEventListener("click", function () {
+      //   alert("new button click");
+      // });
+    </script>
+  </body>
+</html>
