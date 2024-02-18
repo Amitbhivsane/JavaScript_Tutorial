@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="myclass">
+      <div class="center"></div>
+
+      <ul id="mylist">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ul>
+    </div>
+
+    <script>
+      const eventD = document.getElementById("mylist");
+      eventD.addEventListener("click", fn);
+      function fn(event) {
+        // console.log("event", event.target);
+        const targer = event.target;
+        console.log(targer.textContent);
+      }
+    </script>
+  </body>
+</html>
